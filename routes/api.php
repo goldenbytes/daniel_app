@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::resource('juegos','juegosController',['only'=>['index','store','show','update']]);
 Route::resource('jugadores','jugadoresController',['only'=>['index','store','show','update']]);
+Route::get('pronunciacion/{idioma}/{palabra}','API_oxfor@pronunciar');
