@@ -1,0 +1,12 @@
+.Colordeboton{
+  color: #fff;
+  background-color: #A81913;
+}
+.Colordeboton:hover{
+  color: #fff;
+  background-color: #258EC9;
+}
+.Colordeboton:active{
+  color: #fff;
+  background-color: #A81913;
+}
