@@ -5,14 +5,13 @@ Aplicación para mi amigo daniel con mucho amor con la Ayuda de <a href="https:/
 </p>
 
 ## Lenguajes
-Back-End
-MySQL - PHP
+Back-End (MySQL - PHP)
 
-Front-End
+Front-End (
 Materialize
 Jquery
-React-Native
+React-Native)
 
-## License
+## Licencia
 
 Codigo abierto [MIT license](http://opensource.org/licenses/MIT).
