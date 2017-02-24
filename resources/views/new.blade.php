@@ -20,7 +20,7 @@
                   <input id="icon_prefix" type="text" class="validate white-text">
                   <label for="icon_prefix"># of levels</label>
               </div>
-              <button class="waves-effect waves-light btn-large Colordeboton" href="Jugadores.html">Create Game</button>
+              <button class="waves-effect waves-light btn-large Colordeboton">Create Game</button>
             </div>
           </form>
       </div>

@@ -16,7 +16,7 @@
         <div class="center-align">
           <img src="Imagenes/logo.png"  class="responsive-img logo"  alt="Logo de Gorod"/>
           <br>
-    			<button class="waves-effect waves-light btn Colordeboton btn-large" href="Jugadores.html"><span class= "fa fa-bomb"></span> Start</button>
+    			<button class="waves-effect waves-light btn Colordeboton btn-large"><span class= "fa fa-bomb"></span> Start</button>
         </div>
       </div>
 		</div>

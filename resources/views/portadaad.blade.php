@@ -36,7 +36,7 @@
               </div>
             </form>
             <br>
-      			<button class="waves-effect waves-light btn Colordeboton btn-large" href="CrearJuego.html"><span class= "fa fa-bomb"></span> Start</button>
+      			<button class="waves-effect waves-light btn Colordeboton btn-large"><span class= "fa fa-bomb"></span> Start</button>
           </div>
         </div>
       </div>

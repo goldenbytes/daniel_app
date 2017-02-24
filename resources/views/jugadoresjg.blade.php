@@ -20,7 +20,7 @@
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">Your Name</label>
               </div>
-              <button class="waves-effect waves-light btn-large Colordeboton" href="Niveles.html">Next</button>
+              <button class="waves-effect waves-light btn-large Colordeboton">Next</button>
             </div>
           </form>
       </div>
