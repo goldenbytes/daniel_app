@@ -12,9 +12,23 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('portadajg');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
+Route::get('/jugadores/jugadores', function () {
+    return view('jugadoresjg');
+});
+Route::get('/jugadores/niveles', function () {
+    return view('nivelesjg');
+});
+Route::get('/jugadores/nogamne', function () {
+    return view('nogame');
+});
+Route::get('/admin/portada', function () {
+    return view('portadaad');
+});
+Route::get('/admin/new', function () {
+    return view('new');
+});
+Route::get('/admin/players', function () {
+    return view('jugadoresad');
+});
