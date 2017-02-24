@@ -21,7 +21,7 @@
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">Type the keyword...!!!</label>
               </div>
-              <button class="waves-effect waves-light btn-large Colordeboton" href="Niveles.html">Accept</button>
+              <button class="waves-effect waves-light btn-large Colordeboton">Accept</button>
             </div>
           </form>
 
