@@ -20,9 +20,9 @@
       </div>
 		</div>
 	</div>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script type="text/javascript">
+  <script type={!! asset('text/javascript') !!} src={!! asset('js/jquery.min.js') !!}></script>
+  <script src={!! asset('js/materialize.min.js') !!}></script>
+  <script type={!! asset('text/javascript') !!}>
       barra();
         function barra() {
           setInterval(cambiarcolor,1);
@@ -53,3 +53,4 @@
   </script>
 </body>
 </html>
+{!! asset('') !!}

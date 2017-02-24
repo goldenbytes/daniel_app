@@ -14,14 +14,14 @@
 		<div class="cuerpo">
       <div class="valign-wrapper">
         <div class="center-align">
-          <img src="Imagenes/logo.png"  class="responsive-img logo"  alt="Logo de Gorod"/>
+          <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo"  alt="Logo de Gorod"/>
           <br>
     			<button class="waves-effect waves-light btn Colordeboton btn-large"><span class= "fa fa-bomb"></span> Start</button>
         </div>
       </div>
 		</div>
 	</div>
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script type={!! asset('text/javascript') !!} src={!! asset('js/jquery.min.js') !!}></script>
+  <script src={!! asset('js/materialize.min.js') !!}></script>
 </body>
 </html>
