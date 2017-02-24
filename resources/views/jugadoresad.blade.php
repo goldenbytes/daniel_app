@@ -17,7 +17,7 @@
             <div class="row" style="width:100%">
                 <ul class="collection">
                   <li class="collection-item avatar">
-                    <img src="Iconos/pirata.png" alt="" class="circle">
+                    <img src="{!! asset('Iconos/pirata.png') !!}" alt="" class="circle">
                     <span class="title black-text left-aling">Player 1</span>
                     <p>Level # <br>
                        Keyword
@@ -25,7 +25,7 @@
                     <a href="#!" class="secondary-content"><i class="fa fa-thumbs-o-up"></i></a>
                   </li>
                   <li class="collection-item avatar">
-                    <img src="Iconos/pirata.png" alt="" class="circle">
+                    <img src="{!! asset('Iconos/pirata.png') !!}" alt="" class="circle">
                     <span class="title black-text">Player 2</span>
                     <p>Level # <br>
                        Keyword
@@ -33,7 +33,7 @@
                     <a href="#!" class="secondary-content"><i class="fa fa-thumbs-o-up"></i></a>
                   </li>
                   <li class="collection-item avatar">
-                    <img src="Iconos/pirata.png" alt="" class="circle">
+                    <img src="{!! asset('Iconos/pirata.png') !!}" alt="" class="circle">
                     <span class="title black-text">Player 3</span>
                     <p>Level # <br>
                        Keyword
@@ -41,7 +41,7 @@
                     <a href="#!" class="secondary-content"><i class="fa fa-thumbs-o-up"></i></a>
                   </li>
                   <li class="collection-item avatar">
-                    <img src="Iconos/pirata.png" alt="" class="circle">
+                    <img src="{!! asset('Iconos/pirata.png') !!}" alt="" class="circle">
                     <span class="title black-text">Player 4</span>
                     <p>Level # <br>
                        Keyword
