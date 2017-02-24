@@ -5,21 +5,27 @@ namespace App\Http\Controllers;
 use Validator;
 use Illuminate\Http\Request;
 use App\juego;
+use DB;
 
 class juegosController extends Controller
 {
     function index(){
         $resultado  =   juego::LeftJoin('users','users.id','=','juegos.id')
-                                ->select('users.name', 'id_jue AS juego','max_jue AS jugadores','lvl_jue AS niveles','activo_jue AS estado','fechac_jue AS creacion','fecha_jue AS modificado')
+                                ->where('activo_jue',1)
+                                ->select(DB::raw("users.name, id_jue AS juego,max_jue AS jugadores,lvl_jue AS niveles,activo_jue AS estado,fechac_jue AS creacion,fecha_jue AS modificado,(SELECT COUNT(*) FROM jugadores WHERE id_jue=juego) AS inscritos"))
                                 ->get();
-        return($resultado);
+        if(count($resultado))
+            return(['mensaje'=>'Se encontrarón datos','datos'=>$resultado]);
+        else
+            return(['mensaje'=>'No se encontrarón datos','datos'=>false]);
     }
     function show($id){
         $resultado  =   juego::LeftJoin('users','users.id','=','juegos.id')
-                                ->select('users.name', 'id_jue AS juego','max_jue AS jugadores','lvl_jue AS niveles','activo_jue AS estado','fechac_jue AS creacion','fecha_jue AS modificado')
+                                ->select(DB::raw("users.name, id_jue AS juego,max_jue AS jugadores,lvl_jue AS niveles,activo_jue AS estado,fechac_jue AS creacion,fecha_jue AS modificado,(SELECT COUNT(*) FROM jugadores WHERE id_jue=juego) AS inscritos"))
                                 ->where('juegos.id',$id)
+                                ->where('activo_jue',1)
                                 ->get();
-        if($resultado)
+        if(count($resultado))
             return(['mensaje'=>'Se encontrarón datos','datos'=>$resultado]);
         else
             return(['mensaje'=>'No se encontrarón datos','datos'=>false]);

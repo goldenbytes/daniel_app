@@ -13,15 +13,17 @@
   <div class="fondo2">
       <div class="cuerpo2">
           <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gorod"/>
+          <div id="cargador"></div>
           <div class="caption center-align">
               <form class="col s12">
                 <div class="row">
+                    <input type="hidden" id="juego" value=""/>
                   <div class="input-field col s12">
                       <i class="fa fa-user prefix"></i>
-                      <input id="icon_prefix" type="text" class="validate">
+                      <input id="name" type="text" class="validate">
                       <label for="icon_prefix">Your Name</label>
                   </div>
-                  <button type="button" class="waves-effect waves-light btn-large Colordeboton">
+                  <button type="submit" class="waves-effect waves-light btn-large Colordeboton">
                       Next
                   </button>
                 </div>
@@ -32,5 +34,6 @@
   <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('js/materialize.min.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('js/paratodos.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('js/jugadores.js') !!}"></script>
 </body>
 </html>
