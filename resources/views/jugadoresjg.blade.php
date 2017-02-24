@@ -24,6 +24,18 @@
                 </div>
               </form>
           </div>
+		<div class="cuerpo2">
+      <div class="caption center-align">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                  <i class="fa fa-user prefix"></i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">Your Name</label>
+              </div>
+              <button class="waves-effect waves-light btn-large Colordeboton">Next</button>
+            </div>
+          </form>
       </div>
 	</div>
   <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
