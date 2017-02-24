@@ -6,7 +6,6 @@ y en font-family cuando eliges una fuente te sale ahi que poner en font family
 */
 @import url(https://fonts.googleapis.com/css?family=Baloo);
 html,body{
-  color:white;
   font-family:'Baloo',cursive;
   height:100%;
   width:100%;
@@ -40,7 +39,7 @@ margin: 30px 0px 30px 0px;
 padding: 10px;
 background: rgba(0,0,0,0.5);
 display: inline-block;
-    width: 75%;
+    width: 85%;
 }
 .fondo2{
     background: url(../Imagenes/2.png) repeat-y fixed center;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Pirate Party</title>
@@ -28,7 +28,9 @@
               </form>
           </div>
 	</div>
+  </div>
   <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
   <script type="text/javascript" src="{!! asset('js/materialize.min.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('js/paratodos.js') !!}"></script>
 </body>
 </html>

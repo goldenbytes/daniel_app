@@ -48,9 +48,15 @@
             </ul>
           </div>
   		</div>
+      <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red" href="./pronunciation">
+          <i class="fa fa-microphone"></i>
+        </a>
+      </div>
   	</div>
     <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('js/materialize.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/paratodos.js') !!}"></script>
     <script type="text/javascript">
     barra();
       function barra() {

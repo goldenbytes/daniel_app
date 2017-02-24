@@ -20,7 +20,12 @@ Route::get('/players', function () {
 Route::get('/players/levels', function () {
     return view('nivelesjg');
 });
-Route::get('/players/game', function () {
+Route::get('/players/pronunciation', function () {
+    return view('pronunciacion');
+});
+
+
+Route::get('/nogame', function () {
     return view('nogame');
 });
 
