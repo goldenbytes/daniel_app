@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('portadajg');
 });
-Route::get('/jugadores/jugadores', function () {
+Route::get('/jugadores', function () {
     return view('jugadoresjg');
 });
 Route::get('/jugadores/niveles', function () {
