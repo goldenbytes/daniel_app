@@ -18,7 +18,7 @@ Route::get('/jugadores', function () {
     return view('jugadoresjg');
 });
 Route::get('/jugadores/niveles', function () {
-    return view('nivelesjp');
+    return view('nivelesjg');
 });
 Route::get('/jugadores/nogamne', function () {
     return view('nogame');
