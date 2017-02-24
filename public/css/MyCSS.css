@@ -11,13 +11,16 @@ html,body{
   height:100%;
   width:100%;
   margin: 0px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .logo{
   max-height: 600px;
 }
+.logo-admin{
+    max-height: 80px;
+}
 .fondo{
-    background: url(../Imagenes/4.png) no-repeat fixed center;
+    background: url(../Imagenes/4.png) repeat-y fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,15 +33,17 @@ html,body{
 margin: 30px 0px 30px 0px;
 padding: 10px;
 display: inline-block;
+
 }
 .cuerpo2{
 margin: 30px 0px 30px 0px;
 padding: 10px;
 background: rgba(0,0,0,0.5);
 display: inline-block;
+    width: 75%;
 }
 .fondo2{
-    background: url(../Imagenes/2.png) no-repeat fixed center;
+    background: url(../Imagenes/2.png) repeat-y fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,7 +53,7 @@ display: inline-block;
     text-align: center;
 }
 .fondo3{
-    background: url(../Imagenes/5.png) no-repeat fixed center;
+    background: url(../Imagenes/5.png) repeat-y fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -58,7 +63,7 @@ display: inline-block;
     text-align: center;
 }
 .fondo4{
-    background: url(../Imagenes/3.png) no-repeat fixed center;
+    background: url(../Imagenes/3.png) repeat-y fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

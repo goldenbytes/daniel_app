@@ -14,16 +14,18 @@
 Route::get('/', function () {
     return view('portadajg');
 });
-Route::get('/jugadores', function () {
+Route::get('/players', function () {
     return view('jugadoresjg');
 });
-Route::get('/jugadores/niveles', function () {
+Route::get('/players/levels', function () {
     return view('nivelesjg');
 });
-Route::get('/jugadores/nogamne', function () {
+Route::get('/players/game', function () {
     return view('nogame');
 });
-Route::get('/admin/portada', function () {
+
+
+Route::get('/admin', function () {
     return view('portadaad');
 });
 Route::get('/admin/new', function () {

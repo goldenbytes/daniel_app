@@ -12,7 +12,9 @@
   <body>
 
     <div class="fondo3">
+
   		<div class="cuerpo2">
+          <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gorod"/>
         <div class="left-align">
             <div class="row" style="width:100%">
                 <ul class="collection">
@@ -46,7 +48,7 @@
                     <p>Level # <br>
                        Keyword
                     </p>
-                    <a href="#!" class="secondary-content"><i class="fa fa-thumbs-o-up"></i></a>
+                    <b href="#!" class="secondary-content"><i class="fa fa-thumbs-o-up"></i></b>
                   </li>
                 </ul>
             </div>

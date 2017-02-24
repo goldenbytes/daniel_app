@@ -16,12 +16,14 @@
         <div class="center-align">
           <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo"  alt="Logo de Gorod"/>
           <br>
-    			<button class="waves-effect waves-light btn Colordeboton btn-large"><span class= "fa fa-bomb"></span> Start</button>
+    			<a type="button" class="waves-effect waves-light btn Colordeboton btn-large" href="./players">
+                    <span class= "fa fa-bomb"></span> Start
+                </a>
         </div>
       </div>
 		</div>
 	</div>
-  <script type={!! asset('text/javascript') !!} src={!! asset('js/jquery.min.js') !!}></script>
-  <script src={!! asset('js/materialize.min.js') !!}></script>
+  <script type='text/javascript' src={!! asset('js/jquery.min.js') !!}></script>
+  <script type='text/javascript' src={!! asset('js/materialize.min.js') !!}></script>
 </body>
 </html>

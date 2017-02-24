@@ -14,6 +14,7 @@
     <div class="fondo3">
   		<div class="cuerpo2">
         <div class="center-align">
+          <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gorod"/>
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
@@ -21,7 +22,9 @@
                   <input id="icon_prefix" type="text" class="validate">
                   <label for="icon_prefix">Type the keyword...!!!</label>
               </div>
-              <button class="waves-effect waves-light btn-large Colordeboton">Accept</button>
+              <button type="button" class="waves-effect waves-light btn-large Colordeboton">
+                Accept
+              </button>
             </div>
           </form>
 
