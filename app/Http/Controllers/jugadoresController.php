@@ -27,9 +27,13 @@ class jugadoresController extends Controller
                     $resultado              =   new jugador;
                     $resultado->id_jue      =   $juegos;
                     $resultado->nombre_jug  =   $entrada->nombre;
-                    if($resultado->save())
-                        return(['mensaje'=>'Se registro correctamente','datos'=>$resultado->id_jug]);
-                    else
+                    if($resultado->save()) {
+                        session()->regenerate();
+                        session()->put('id_jugador',$resultado->id_jug);
+                        //Session::put('id_jugador',$resultado->id_jug);
+                        //session()->put(['id_jugador' => $resultado->id_jug]);
+                        return (['mensaje' => 'Se registro correctamente', 'datos' => $resultado->id_jug]);
+                    }else
                         return(['mensaje'=>'No se pudo registrar','datos'=>false]);
                 }else{
                     return(['mensaje'=>'No puedes inscribirte','datos'=>['diponibles'=>$jugadores]]);

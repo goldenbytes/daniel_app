@@ -57,33 +57,9 @@
     <script type="text/javascript" src="{!! asset('js/jquery.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('js/materialize.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('js/paratodos.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('js/progreso_jugadores.js') !!}"></script>
     <script type="text/javascript">
-    barra();
-      function barra() {
-        setInterval(cambiarcolor,1);
-        var r=0;var g=0;var b=0;
-      function cambiarcolor(){
-        r++;
-        $('.determinate').attr("style",'width: 70%;background-color:rgb('+r+','+g+','+b+')');
-        $('.new.badge').attr("style",'color:rgb('+g+','+r+','+b+');background-color:rgb('+b+','+g+','+r+')');
-        console.log('rgb('+r+','+g+','+b+')');
-        if (r%2==0) {
-          g++;
-        }
-        if (g%3==0) {
-          b++;
-        }
-        if (r==250) {
-          r=0;
-        }
-        if (g==250) {
-          g=0;
-        }
-        if (b==250) {
-          b=0;
-        }
-      }
-      }
+      barra();
     </script>
   </body>
 </html>
