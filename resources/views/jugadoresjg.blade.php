@@ -17,7 +17,6 @@
           <div class="caption center-align">
               <form class="col s12">
                 <div class="row">
-                    <input type="hidden" id="juego" value=""/>
                   <div class="input-field col s12">
                       <i class="fa fa-user prefix"></i>
                       <input id="name" type="text" class="validate">

@@ -14,7 +14,7 @@
     <div class="fondo3">
   		<div class="cuerpo2">
         <div class="center-align">
-          <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gorod"/>
+          <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gordo"/>
           <form class="col s12">
             <div class="row">
               <div class="input-field col s12">
@@ -27,8 +27,7 @@
               </button>
             </div>
           </form>
-
-            <ul class="collapsible" data-collapsible="accordion">
+            <ul class="collapsible" data-collapsible="accordion" id="jugadores_jugador">
               <li>
                 <div class="collapsible-header black-text left-align"><span class="new badge" data-badge-caption="%">4</span><span class="material-icons"> <img src="{!! asset('Iconos/pirata.png') !!}" width="36px" alt="" class="responsive-img"></span> Yo mero</div>
                 <div class="collapsible-body">
@@ -60,6 +59,7 @@
     <script type="text/javascript" src="{!! asset('js/progreso_jugadores.js') !!}"></script>
     <script type="text/javascript">
       barra();
+      progreso_jugadores();
     </script>
   </body>
 </html>

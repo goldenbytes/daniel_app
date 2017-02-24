@@ -42,7 +42,7 @@ function enviar(){
                 console.log(datos.datos);
                 if(datos.datos){
                     $('#cargador').html('<p class="green-text">'+datos.mensaje+'</p>');
-                    window.location.href = 'players/levels';
+                    window.location.href = 'players/levels?id='+datos.datos;
                 }else{
                     $('#cargador').html('<p class="red-text">'+datos.mensaje+'</p>');
                     window.location.href = './';
