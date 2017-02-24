@@ -11,6 +11,7 @@ html,body{
   height:100%;
   width:100%;
   margin: 0px;
+  font-size: 20px;
 }
 .logo{
   max-height: 600px;
@@ -48,6 +49,16 @@ display: inline-block;
 }
 .fondo3{
     background: url(../Imagenes/5.png) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+.fondo4{
+    background: url(../Imagenes/3.png) no-repeat fixed center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
