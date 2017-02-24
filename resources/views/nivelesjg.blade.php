@@ -15,35 +15,19 @@
   		<div class="cuerpo2">
         <div class="center-align">
           <img src={!! asset('Imagenes/logo.png') !!}  class="responsive-img logo-admin"  alt="Logo de Gordo"/>
-          <form class="col s12">
+          <form class="col s12" autocomplete="off">
             <div class="row">
               <div class="input-field col s12">
                   <i class="fa fa-user prefix"></i>
-                  <input id="icon_prefix" type="text" class="validate">
+                  <input id="palabra" type="text" class="validate" autocomplete="off" >
                   <label for="icon_prefix">Type the keyword...!!!</label>
               </div>
-              <button type="button" class="waves-effect waves-light btn-large Colordeboton">
+              <button type="submit" class="waves-effect waves-light btn-large Colordeboton">
                 Accept
               </button>
             </div>
           </form>
             <ul class="collapsible" data-collapsible="accordion" id="jugadores_jugador">
-              <li>
-                <div class="collapsible-header black-text left-align"><span class="new badge" data-badge-caption="%">4</span><span class="material-icons"> <img src="{!! asset('Iconos/pirata.png') !!}" width="36px" alt="" class="responsive-img"></span> Yo mero</div>
-                <div class="collapsible-body">
-                    <div class="progress grey">
-                        <div class="determinate" style="width: 70%;background-color:rgb(250,0,0)"></div>
-                    </div>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header black-text left-align"><span class="new badge" data-badge-caption="%">40</span><span class="material-icons"> <img src="{!! asset('Iconos/barco.png') !!}" width="36px" alt="" class="responsive-img"></span> Otro baboso</div>
-                <div class="collapsible-body">
-                  <div class="progress">
-                      <div class="determinate" style="width: 70%; color:red"></div>
-                  </div>
-                </div>
-              </li>
             </ul>
           </div>
   		</div>

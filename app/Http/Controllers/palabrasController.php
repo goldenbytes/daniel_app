@@ -19,7 +19,7 @@ class palabrasController extends Controller
             'id_jugador' => 'required',
         ]);
         if ($validator->fails()) {
-            return (['mensaje'=>'Faltan campos','datos'=>false]);
+            return (['mensaje'=>'Incomplete','datos'=>false]);
         }else{
             $juegos =   juego::where('activo_jue',1)
                 ->max('id_jue');
@@ -35,13 +35,13 @@ class palabrasController extends Controller
                     if ($resultado->save()){
                         $jugador->nivel_jug=$jugador->nivel_jug+1;
                         $jugador->save();
-                        return (['mensaje' => 'Palabra valida', 'datos' => true]);
+                        return (['mensaje' => 'You got it 😆', 'datos' => true]);
                     }else
-                        return(['mensaje'=>'Ocurrio un error','datos'=>false]);
+                        return(['mensaje'=>'Error!','datos'=>false]);
                 }else
-                    return(['mensaje'=>'No exixste el jugador','datos'=>false]);
+                    return(['mensaje'=>'No player found','datos'=>false]);
             }else{
-                return(['mensaje'=>'Palabra no valida','datos'=>false]);
+                return(['mensaje'=>'Invalid word 🤓','datos'=>false]);
             }
         }
 

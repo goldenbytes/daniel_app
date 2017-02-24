@@ -6,6 +6,7 @@ use Validator;
 use Illuminate\Http\Request;
 use App\jugador;
 use App\juego;
+use Carbon\Carbon;
 
 class jugadoresController extends Controller
 {
@@ -63,17 +64,22 @@ class jugadoresController extends Controller
         $juegos =   juego::where('activo_jue',1)
             ->max('id_jue');
         if($juegos){
-            //$juego_diponible=juego::find($juegos);
-            $jugadores      =jugador::where('id_jue',$juegos)->get();
+            $juego_diponible=juego::find($juegos);
+            $jugadores      =jugador::where('id_jue',$juegos)
+                                    ->orderBy('nivel_jug', 'desc')->get();
             if(count($jugadores)) {
                 foreach ($jugadores as $aux) {
                     $html = 0;
                     if ($aux->id_jug == $id_jugador)
                         $html = 1;
-                    $resultado['nombre'] = $aux->nombre_jug;
-                    $resultado['estado'] = $html;
-                    $resultado['nivel'] = $aux->nivel_jug;
-                    $resultado['fecha'] = $aux->actualizacion_jug;
+                    $resultado['nombre']          = $aux->nombre_jug;
+                    $resultado['estado']          = $html;
+                    $resultado['nivel']           = $aux->nivel_jug;
+                    $resultado['nivel_max']       = $juego_diponible->max_jue;
+                    $resultado['tiempo_juego']    = $juego_diponible->fechac_jue;
+                    $resultado['tiempo_jugador']  = $aux->actualizacion_jug;
+                    //$resultado['va']              =date($juego_diponible->fechac_jue)-date($aux->actualizacion_jug);
+
                     $res[]=$resultado;
                 }
                 return (['mensaje' => 'Lista de avance', 'datos' => $res]);
