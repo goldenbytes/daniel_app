@@ -5,7 +5,8 @@ function progreso_jugadores(){
     console.log(parametro_url);
     if (parametro_url != "" && parametro_url>0){
         $('#jugadores_jugador').html('<div class="preloader-wrapper active"> <div class="spinner-layer spinner-red-only"> <div class="circle-clipper left"> <div class="circle"></div></div><div class="gap-patch"> <div class="circle"></div></div><div class="circle-clipper right"> <div class="circle"></div></div></div></div>');
-        setInterval(api_consulta,3000);
+        api_consulta();
+        setInterval(api_consulta,30000);
         function api_consulta(){
             var ingresado=parseInt(parametro_url);
             $.ajax({
