@@ -34,13 +34,17 @@ class juegosController extends Controller
         $validator = Validator::make($entrada->all(), [
             'id_usuario'    => 'required',
             'niveles'       => 'required',
+            'jugadores'     => 'required',
         ]);
         if ($validator->fails()) {
             return (['mensaje'=>'Faltan campos','datos'=>false]);
         }else{
+                juego::where('activo_jue',1)->update(['activo_jue'=>0]);
+
                 $resultado  =   new juego;
                 $resultado->id      =   $entrada->id_usuario;
-                $resultado->max_jue =   $entrada->niveles;
+                $resultado->lvl_jue =   $entrada->niveles;
+                $resultado->max_jue =   $entrada->jugadores;
             if($resultado->save())
                 return(['mensaje'=>'Se guardó correctamsente el Juego','datos'=>true]);
             else

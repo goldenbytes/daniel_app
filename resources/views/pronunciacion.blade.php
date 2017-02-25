@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="http://icons.iconarchive.com/icons/aha-soft/torrent/512/pirate-icon.png" />
   </head>
   <body>
-
     <div class="fondo3">
   		<div class="cuerpo2">
         <div class="center-align">
@@ -19,7 +18,7 @@
             <div class="row">
               <div class="input-field col s12">
                   <i class="fa fa-search prefix"></i>
-                  <input id="icon_prefix" type="text" class="validate">
+                  <input id="icon_prefix" type="text" class="validate white-text">
                   <label for="icon_prefix">Type the keyword...!!!</label>
               </div>
               <button type="submit" class="waves-effect waves-light btn-large Colordeboton">

@@ -46,4 +46,23 @@ class palabrasController extends Controller
         }
 
     }
+    function index(){
+        $juegos     =   juego::where('activo_jue',1)
+                                ->max('id_jue');
+        if($juegos) {
+            $resultado = macht::leftJoin('palabras', 'palabras.id_pal', '=', 'palabra.id_pal')
+                ->leftJoin('jugadores', 'palabra.id_jug', '=', 'jugadores.id_jug')
+                ->where('palabra.id_jue', $juegos)
+                ->select('nombre_jug AS jugador', 'nivel_jug AS nivel', 'titulo_pal AS palabra')
+                ->orderby('nombre_jug')
+                ->get();
+            $palabras = palabra::select(DB::raw("id_pal id,titulo_pal,(SELECT COUNT(*) FROM palabra WHERE id_pal=id AND id_jue=$juegos) usada"))
+                ->get();
+            $todo['palabras']   =   $palabras;
+            $todo['jugadores']  =   $resultado;
+            return(['mensaje'=>'Se encontraron datos','datos'=>$todo]);
+        }else{
+            return(['mensaje'=>'No hay juegos disponibles','datos'=>false]);
+        }
+    }
 }

@@ -19,7 +19,7 @@
             <div class="row">
               <div class="input-field col s12">
                   <i class="fa fa-user prefix"></i>
-                  <input id="palabra" type="text" class="validate" autocomplete="off" >
+                  <input id="palabra" type="text" class="validate white-text" autocomplete="off" >
                   <label for="icon_prefix">Type the keyword...!!!</label>
               </div>
               <button type="submit" class="waves-effect waves-light btn-large Colordeboton">

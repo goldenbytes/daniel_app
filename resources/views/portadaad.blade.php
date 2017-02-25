@@ -19,18 +19,18 @@
                   <div class="row">
                     <div class="input-field col s12">
                         <i class="fa fa-user prefix"></i>
-                        <input id="icon_prefix" type="text" class="validate white-text">
+                        <input id="usuario" type="email" class="validate white-text">
                         <label for="icon_prefix">User</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
                         <i class="fa fa-key prefix"></i>
-                        <input id="icon_prefix" type="text" class="validate white-text">
+                        <input id="contra" type="password" class="validate white-text">
                         <label for="icon_prefix">Password</label>
                     </div>
                   </div>
-                    <button type="button" class="waves-effect waves-light btn Colordeboton btn-large">
+                    <button type="submit" class="waves-effect waves-light btn Colordeboton btn-large">
                         <span class= "fa fa-bomb"></span> Start
                     </button>
                 </form>
@@ -42,5 +42,6 @@
   <script type='text/javascript' src={!! asset('js/jquery.min.js') !!}></script>
   <script type='text/javascript' src={!! asset('js/materialize.min.js') !!}></script>
   <script type="text/javascript" src="{!! asset('js/paratodos.js') !!}"></script>
+  <script type="text/javascript" src="{!! asset('js/login.js') !!}"></script>
 </body>
 </html>

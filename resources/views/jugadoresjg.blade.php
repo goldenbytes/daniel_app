@@ -19,7 +19,7 @@
                 <div class="row">
                   <div class="input-field col s12">
                       <i class="fa fa-user prefix"></i>
-                      <input id="name" type="text" class="validate">
+                      <input id="name" type="text" class="validate white-text">
                       <label for="icon_prefix">Your Name</label>
                   </div>
                   <button type="submit" class="waves-effect waves-light btn-large Colordeboton">
