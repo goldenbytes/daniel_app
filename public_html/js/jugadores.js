@@ -25,6 +25,7 @@ function verificar(){
             }
         },
         error: function(error){
+            console.log(error);
             window.location.href = './';
         }
     });
@@ -49,6 +50,7 @@ function enviar(){
                 }
             },
             error: function(error){
+                console.log(error);
                 window.location.href = './';
             }
         });

@@ -22,7 +22,7 @@ jashear();
 function jashear(){
     var parametro_url = window.location.hash;
     if(!parametro_url){
-        window.location.href = '../';
+        //window.location.href = '../';
     }else{
         $('a').attr('href',$('a').attr('href')+parametro_url)
     }
