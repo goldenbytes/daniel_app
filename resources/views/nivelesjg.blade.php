@@ -25,6 +25,10 @@
               <button type="submit" class="waves-effect waves-light btn-large Colordeboton">
                 Accept
               </button>
+              <audio autoplay="" controls="" loop="" preload="" class="hide">
+                <source src="{!! asset('canciones/1.mp3') !!}" type="audio/mpeg"></source>
+                Your browser does not support the audio element.
+              </audio>
             </div>
           </form>
             <ul class="collapsible" data-collapsible="accordion" id="jugadores_jugador">

@@ -22,10 +22,13 @@ Route::group(['middleware' => 'Cors'], function() {
     Route::resource('juegos', 'juegosController', ['only' => ['index', 'store', 'show', 'update']]);
     Route::resource('jugadores', 'jugadoresController', ['only' => ['index', 'store', 'show', 'update']]);
     Route::resource('palabras', 'palabrasController', ['only' => ['index', 'store', 'show', 'update']]);
+    Route::get('palabras/eliminar/{palabra}', 'palabrasController@eliminar');
 
     //api oxfor
     Route::get('pronunciacion/{palabra}', 'API_oxfor@pronunciar');
 
     //adminsitrador
     Route::post('login', 'LoginController@postLogin');
+    Route::post('login/registrar', 'LoginController@registrar');
+
 });

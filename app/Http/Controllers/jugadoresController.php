@@ -75,7 +75,7 @@ class jugadoresController extends Controller
                     $resultado['nombre']          = $aux->nombre_jug;
                     $resultado['estado']          = $html;
                     $resultado['nivel']           = $aux->nivel_jug;
-                    $resultado['nivel_max']       = $juego_diponible->max_jue;
+                    $resultado['nivel_max']       = $juego_diponible->lvl_jue;
                     $resultado['tiempo_juego']    = $juego_diponible->fechac_jue;
                     $resultado['tiempo_jugador']  = $aux->actualizacion_jug;
                     //$resultado['va']              =date($juego_diponible->fechac_jue)-date($aux->actualizacion_jug);

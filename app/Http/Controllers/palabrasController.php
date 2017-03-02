@@ -65,4 +65,24 @@ class palabrasController extends Controller
             return(['mensaje'=>'No hay juegos disponibles','datos'=>false]);
         }
     }
+    function show($palabra){
+        $resultado  =   palabra::where('titulo_pal',$palabra)->get();
+        if(count($resultado)) {
+            return(['Ya existe esa palabra']);
+        }else{
+            $nueva  =   new palabra;
+            $nueva->titulo_pal  =   $palabra;
+            $nueva->save();
+            return(["Se ha agregado $palabra"]);
+        }
+    }
+    function eliminar($palabra){
+        $resultado  =   palabra::where('titulo_pal',$palabra)->get();
+        if(count($resultado)) {
+            palabra::where('titulo_pal',$palabra)->delete();
+            return(["Se eliminó $palabra"]);
+        }else{
+            return(["No existe $palabra"]);
+        }
+    }
 }

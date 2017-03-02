@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class LoginController extends Controller
 {
@@ -34,5 +35,12 @@ class LoginController extends Controller
                 'mensaje'   =>'Los campos no coinciden'
             ]);
         }
+    }
+    public function registrar(Request $request){
+        return User::create([
+            'name' => $request->nombre,
+            'email' => $request->email,
+            'password' => bcrypt($request->contra),
+        ]);
     }
 }
