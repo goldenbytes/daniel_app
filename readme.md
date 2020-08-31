@@ -15,3 +15,5 @@ React-Native)
 ## Licencia
 
 Codigo abierto [MIT license](http://opensource.org/licenses/MIT).
+
+@all-contributors please add @jakebolam for infrastructure, tests and code
